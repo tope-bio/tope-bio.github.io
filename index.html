@@ -257,6 +257,11 @@
     }
     .button:hover { background: var(--green); color: var(--night); }
 
+    /* Secondary row: Google Scholar and LinkedIn as plain underlined links. */
+    .profiles { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; margin: 1.5rem 0 0; }
+    .profiles a { color: rgba(255, 255, 255, 0.8); text-decoration-color: rgba(255, 255, 255, 0.35); }
+    .profiles a:hover { color: var(--green); text-decoration-color: currentColor; }
+
     footer {
       margin-top: clamp(5rem, 12vw, 8rem);
       padding-top: 1.25rem;
@@ -348,6 +353,11 @@
         <a class="email" id="email" href="#contact">info at tope dot bio</a>
         <a class="button" href="Hanf-CV.pdf">Download CV (PDF)</a>
       </div>
+      <!-- Profiles elsewhere; open in a new tab so the visitor keeps this page. -->
+      <p class="profiles">
+        <a href="https://scholar.google.com/citations?user=_zyvk9wAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/karl-hanf-a3878958/" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
 
       <footer>
         <p>&copy; 2026 Tope LLC, Billerica, Massachusetts</p>
